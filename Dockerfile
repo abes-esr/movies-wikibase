@@ -1,4 +1,4 @@
-FROM wikibase/wikibase-bundle:1.39.1-wmde.11
+FROM wikibase/wikibase-bundle:1.39.1-wmde.11 as movies-wikibase-image
 
 RUN git clone --recurse-submodules https://gerrit.wikimedia.org/r/mediawiki/extensions/PluggableAuth.git -b REL1_39 /var/www/html/extensions/PluggableAuth 
 RUN git clone --recurse-submodules https://gerrit.wikimedia.org/r/mediawiki/extensions/LDAPAuthorization.git -b REL1_39 /var/www/html/extensions/LDAPAuthorization 
