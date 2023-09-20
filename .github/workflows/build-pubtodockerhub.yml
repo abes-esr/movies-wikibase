@@ -42,5 +42,5 @@ jobs:
           do
             # publication de l'image Wikibase avec LDAP
             docker build . --target movies-wikibase-image -t ${DOCKER_TAG}-wikibase
-            docker push ${DOCKER_TAG}
+            docker push ${DOCKER_TAG}-wikibase
           done
