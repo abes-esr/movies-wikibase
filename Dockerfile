@@ -14,6 +14,6 @@ RUN apt-get update && \
     docker-php-ext-configure ldap --with-libdir=lib/x86_64-linux-gnu/ && \
     docker-php-ext-install ldap
 
-#https://github.com/DaSchTour/matomo-mediawiki-extension?tab=readme-ov-file#troubleshooting 
+#https://github.com/DaSchTour/matomo-mediawiki-extension?tab=readme-ov-file#troubleshooting
 #https://gerrit.wikimedia.org/r/c/mediawiki/core/+/952569/4/includes/Output/OutputPage.php
 COPY OutputPage.php /var/www/html/includes/
